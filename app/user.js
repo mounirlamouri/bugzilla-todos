@@ -109,6 +109,9 @@ User.prototype.needsCheckin = function(callback) {
       'field0-2-0': 'flagtypes.name',
       'type0-2-0': 'substring',
       'value0-2-0': 'review+',
+      'field1-0-0': 'flagtypes.name',
+      'type1-0-0': 'not_contains',
+      'value1-0-0': 'checkin+',
       status: ['NEW','UNCONFIRMED','REOPENED', 'ASSIGNED'],
       include_fields: 'id,summary,status,resolution,last_change_time,attachments'
    },
